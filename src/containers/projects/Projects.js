@@ -20,7 +20,7 @@ export default function Projects() {
       request: (operation) => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
+            authorization: `Bearer ${atob(arts.githubConvertedToken)}`,
           },
         });
       },
@@ -30,7 +30,7 @@ export default function Projects() {
       .query({
         query: gql`
           {
-            repositoryOwner(login: "${openSource.githubUserName}") {
+            repositoryOwner(login: "${arts.githubUserName}") {
               ... on User {
                 pinnedRepositories(first: 6) {
                   edges {
@@ -67,7 +67,7 @@ export default function Projects() {
   }
 
   return (
-    <div className="main" id="opensource">
+    <div className="main" id="arts">
       <h1 className="project-title">Open Source Projects</h1>
       <div className="repo-cards-div-main">
         {repo.map((v, i) => {

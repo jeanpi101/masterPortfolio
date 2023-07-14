@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const openSource = {
+const arts = {
   githubConvertedToken: process.env.GITHUB_TOKEN,
   githubUserName: process.env.GITHUB_USERNAME,
 };
@@ -12,7 +12,7 @@ const openSource = {
 const query_pr = {
   query: `
 	query {
-	  user(login: "${openSource.githubUserName}"){
+	  user(login: "${arts.githubUserName}"){
 	    pullRequests(last: 100, orderBy: {field: CREATED_AT, direction: DESC}){
       totalCount
       nodes{
@@ -49,7 +49,7 @@ const query_pr = {
 const query_issue = {
   query: `query{
 
-		user(login: "${openSource.githubUserName}") {
+		user(login: "${arts.githubUserName}") {
     issues(last: 100, orderBy: {field:CREATED_AT, direction: DESC}){
       totalCount
       nodes{
@@ -84,7 +84,7 @@ const query_issue = {
 
 const query_org = {
   query: `query{
-	user(login: "${openSource.githubUserName}") {
+	user(login: "${arts.githubUserName}") {
 	    repositoriesContributedTo(last: 100){
 	      totalCount
 	      nodes{
@@ -102,7 +102,7 @@ const query_org = {
 const query_pinned_projects = {
   query: `
 	query { 
-	  user(login: "${openSource.githubUserName}") { 
+	  user(login: "${arts.githubUserName}") { 
 	    pinnedItems(first: 6, types: REPOSITORY) {
 	      totalCount
 	      nodes{
@@ -130,7 +130,7 @@ const baseUrl = "https://api.github.com/graphql";
 
 const headers = {
   "Content-Type": "application/json",
-  Authorization: "bearer " + openSource.githubConvertedToken,
+  Authorization: "bearer " + arts.githubConvertedToken,
 };
 
 fetch(baseUrl, {
@@ -160,7 +160,7 @@ fetch(baseUrl, {
 
     console.log("Fetching the Pull Request Data.\n");
     fs.writeFile(
-      "./src/shared/opensource/pull_requests.json",
+      "./src/shared/arts/pull_requests.json",
       JSON.stringify(cropped),
       function (err) {
         if (err) {
@@ -195,7 +195,7 @@ fetch(baseUrl, {
 
     console.log("Fetching the Issues Data.\n");
     fs.writeFile(
-      "./src/shared/opensource/issues.json",
+      "./src/shared/arts/issues.json",
       JSON.stringify(cropped),
       function (err) {
         if (err) {
@@ -234,7 +234,7 @@ fetch(baseUrl, {
 
     console.log("Fetching the Contributed Organization Data.\n");
     fs.writeFile(
-      "./src/shared/opensource/organizations.json",
+      "./src/shared/arts/organizations.json",
       JSON.stringify(newOrgs),
       function (err) {
         if (err) {
@@ -289,7 +289,7 @@ fetch(baseUrl, {
 
     console.log("Fetching the Pinned Projects Data.\n");
     fs.writeFile(
-      "./src/shared/opensource/projects.json",
+      "./src/shared/arts/projects.json",
       JSON.stringify(newProjects),
       function (err) {
         if (err) {

@@ -4,7 +4,7 @@ import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
-import Opensource from "../pages/opensource/Opensource";
+import Arts from "../pages/arts/Arts";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
@@ -42,10 +42,8 @@ export default class Main extends Component {
                 )}
               />
               <Route
-                path="/opensource"
-                render={(props) => (
-                  <Opensource {...props} theme={this.props.theme} />
-                )}
+                path="/arts"
+                render={(props) => <Arts {...props} theme={this.props.theme} />}
               />
               <Route
                 path="/contact"
@@ -103,10 +101,8 @@ export default class Main extends Component {
                 )}
               />
               <Route
-                path="/opensource"
-                render={(props) => (
-                  <Opensource {...props} theme={this.props.theme} />
-                )}
+                path="/arts"
+                render={(props) => <Arts {...props} theme={this.props.theme} />}
               />
               <Route
                 path="/contact"
