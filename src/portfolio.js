@@ -376,7 +376,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "Bartholometo.png",
     description:
-      "I am available on LinkedIn and via e-mail. Message me there and I guarantee to answer within 24h.",
+      "I am available on LinkedIn and via e-mail. Message me there (in English or Polish!) and I guarantee to answer within 24h.",
   },
   blogSection: {},
   addressSection: {
