@@ -176,6 +176,13 @@ const skills = {
           },
         },
         {
+          skillName: "Android",
+          fontAwesomeClassname: "logos:android",
+          style: {
+            color: "#FF2BC2",
+          },
+        },
+        {
           skillName: "Figma",
           fontAwesomeClassname: "simple-icons:figma",
           style: {
