@@ -1,105 +1,61 @@
 {
   "data": [
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/jeanpi/masterPortfolio",
-      "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
-      "isFork": false,
+      "id": "project1",
+      "name": "MIPS CPU",
+      "createdAt": "2021-12-17",
+      "url": "https://github.com/jeanpi101/mips-verilog-cpu",
+      "description": "An implementation of a MIPS I ISA compatible CPU. I personally wrote the testbench",
+      "isFork": true,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
+          "name": "Verilog",
+          "iconifyClass": "vscode-icons:file-type-verilog"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "C++",
+          "iconifyClass": "devicon:cplusplus"
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
+          "name": "Assembly",
+          "iconifyClass": "tabler:assembly"
         }
       ]
     },
     {
-      "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
-      "isFork": false,
+      "id": "project2",
+      "name": "UI for Issie",
+      "createdAt": "2022-03-01",
+      "url": "https://github.com/jeanpi101/hlp23-team6",
+      "description": "Created the resize functionality for moving objects in ISSIE - a design tool for digital electronics born at Imperial College.",
+      "isFork": true,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "F#",
+          "iconifyClass": "logos:fsharp"
         }
       ]
     },
     {
-      "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
-      "createdAt": "2022-02-11T14:50:20Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
-      "isFork": false,
+      "id": "project3",
+      "name": "Nutty Nios",
+      "createdAt": "2022-11-06",
+      "url": "https://github.com/jeanpi101/NuttyNios",
+      "description": "An interactive, multiplayer game.",
+      "isFork": true,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "Verilog",
+          "iconifyClass": "vscode-icons:file-type-verilog"
         }
       ]
     },
     {
-      "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
+      "id": "project4",
+      "name": "Mars Rover - 2nd Final Year Project",
       "createdAt": "2021-11-26T17:56:07Z",
-      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjcyMjI5Njk=",
-      "name": "react-awesome-loaders",
-      "createdAt": "2021-01-06T06:36:41Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-loaders",
-      "description": "🚀  High quality, super responsive and completely customisable Loading Animations to insert into your website with single line of code.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
-      "createdAt": "2021-01-01T08:31:51Z",
-      "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "url": "",
+      "description": "Created the ground control website for the rover (hosted on AWS ec2)",
       "isFork": false,
       "languages": [
         {
@@ -107,8 +63,47 @@
           "iconifyClass": "logos-javascript"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "ReactJS",
+          "iconifyClass": "devicon:react-wordmark"
+        },
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "AWS",
+          "iconifyClass": "logos:aws"
+        },
+        {
+          "name": "MongoDB",
+          "iconifyClass": "devicon:mongodb-wordmark"
+        }
+      ]
+    },
+    {
+      "id": "project5",
+      "name": "Music Synthesiser",
+      "createdAt": "2021-04-06",
+      "url": "",
+      "description": "A simulation of a musical synthesiser implemented in LTSpice. I created the voltage controlled oscillator and the voltage controlled filter.",
+      "isFork": false,
+      "languages": []
+    },
+    {
+      "id": "project6",
+      "name": "European Rover Challenge Mars Rover",
+      "createdAt": "2022-10-10",
+      "url": "https://github.com/jeanpi101/mar-srover",
+      "description": "Responsible for the power delivery system and hardware-software coordination (including, but not limited to, the operation of the robotic arm, real-time radio data transfer, steering system) for a rover, named Harbinger, participating in the 2023 European Rover Challenge in Kielce, Poland",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "devicon:cplusplus"
+        },
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
         }
       ]
     }

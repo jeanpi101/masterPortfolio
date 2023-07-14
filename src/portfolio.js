@@ -402,7 +402,7 @@ const experience = {
       ],
     },
     {
-      title: "Extracurricular Projects",
+      title: "Extracurricular Projects Positions",
       experiences: [
         {
           title: "Head Electronic Engineer",
