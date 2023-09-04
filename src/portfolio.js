@@ -392,7 +392,7 @@ const contactPageData = {
       "https://www.google.com/maps/place/Imperial+College+London/@51.4988222,-0.1774484,17z/data=!3m2!4b1!5s0x47d8cc700f626631:0x955981a81618aba8!4m6!3m5!1s0x48760567da220a01:0x31911b371c692e86!8m2!3d51.4988222!4d-0.1748735!16zL20vMGdsNng?entry=ttu",
   },
   phoneSection: {
-    title: "+44 7500 518749",
+    title: "",
     subtitle: "",
   },
 };
